@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=DM+Sans:wght@300;400;500;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#080C18;color:#E2E8F0;font-family:'DM Sans',sans-serif}
+::-webkit-scrollbar{width:4px;height:4px}::-webkit-scrollbar-track{background:#0F1629}::-webkit-scrollbar-thumb{background:#1E2A45;border-radius:2px}
+.grid-bg{background-image:linear-gradient(rgba(0,194,255,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(0,194,255,0.03) 1px,transparent 1px);background-size:40px 40px}
+.card{background:#141B2E;border:1px solid #1E2A45;border-radius:12px;padding:1.25rem;transition:border-color .2s}
+.card:hover{border-color:rgba(0,194,255,0.25)}
+.pulse-dot{width:8px;height:8px;border-radius:50%;background:#10B981;animation:pg 2s infinite;display:inline-block}
+.pulse-dot.off{background:#EF4444;animation:pr 1s infinite}
+@keyframes pg{0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(16,185,129,0.4)}50%{opacity:.8;box-shadow:0 0 0 6px rgba(16,185,129,0)}}
+@keyframes pr{0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(239,68,68,0.4)}50%{opacity:.8;box-shadow:0 0 0 6px rgba(239,68,68,0)}}
+.nav-a{display:flex;align-items:center;gap:10px;padding:9px 14px;border-radius:8px;color:#94A3B8;font-size:13px;font-weight:500;cursor:pointer;transition:all .15s;text-decoration:none;border-left:2px solid transparent}
+.nav-a:hover{background:#141B2E;color:#E2E8F0}
+.nav-a.active{background:rgba(0,194,255,0.1);color:#00C2FF;border-color:#00C2FF}
+.btn{background:rgba(0,194,255,0.12);border:1px solid rgba(0,194,255,0.35);color:#00C2FF;padding:7px 14px;border-radius:8px;font-size:12px;font-weight:500;cursor:pointer;transition:all .15s;display:inline-flex;align-items:center;gap:6px}
+.btn:hover{background:rgba(0,194,255,0.22)}
+.btn-sm{padding:5px 10px;font-size:11px}
+.abanner{display:flex;align-items:flex-start;gap:10px;padding:11px 14px;border-radius:8px;border-left:3px solid;font-size:12px;margin-bottom:8px}
+.ah{background:rgba(239,68,68,0.1);border-color:#EF4444;color:#FCA5A5}
+.aw{background:rgba(245,158,11,0.1);border-color:#F59E0B;color:#FCD34D}
+.ai{background:rgba(0,194,255,0.1);border-color:#00C2FF;color:#7DD3FC}
+input,select{background:#0F1629;border:1px solid #1E2A45;color:#E2E8F0;padding:7px 11px;border-radius:8px;font-size:12px;outline:none;transition:border-color .15s;width:100%}
+input:focus,select:focus{border-color:rgba(0,194,255,0.5)}
+label{font-size:11px;color:#94A3B8;display:block;margin-bottom:5px}
+.react-datepicker{background:#141B2E !important;border:1px solid #1E2A45 !important;font-family:'DM Sans',sans-serif !important}
+.react-datepicker__header{background:#0F1629 !important;border-bottom:1px solid #1E2A45 !important}
+.react-datepicker__current-month,.react-datepicker__day-name,.react-datepicker__day{color:#E2E8F0 !important}
+.react-datepicker__day:hover{background:rgba(0,194,255,0.2) !important;border-radius:4px !important}
+.react-datepicker__day--selected{background:#00C2FF !important;color:#080C18 !important;border-radius:4px !important}
+.react-datepicker__day--keyboard-selected{background:rgba(0,194,255,0.3) !important;border-radius:4px !important}
