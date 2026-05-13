@@ -8,7 +8,7 @@ import { generateAlerts } from '../lib/alerts';
 const LIVE_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQbSJRflh9OFloDKHNzHKO3LvdamJhjulEWgospOAYP2dOgD3JEX6dfQOrLkBf2Iehrl1kPAr0phvhr/pub?gid=463350828&single=true&output=csv';
 
 // History tab — recent 5000 rows, fetched once on load
-const HISTORY_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vS-6G97-09OKa0ogiNKnMQIKx6-caMw404tz1eAr95HV9yRzwT51_dA5toc7dF3shJdzporH5p2z6sf/pub?gid=7749345&single=true&output=csv';
+const HISTORY_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vS-6G97-09OKa0ogiNKnMQIKx6-caMw404tz1eAr95HV9yRzwT51_dA5toc7dF3shJdzporH5p2z6sf/pub?gid=2029829669&single=true&output=csv';
 
 const parseCSV = (csv) => {
   return new Promise((resolve) => {
